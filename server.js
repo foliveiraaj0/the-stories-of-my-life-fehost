@@ -8,6 +8,8 @@ var mime = require('mime');
 
 var cache = {}
 
+const port = process.env.PORT || 9000;
+
 function send404(response){
   response.writeHead(404, {'Content-Type': 'text/plain'});
   response.write('Error 404: resource not found.');
@@ -60,8 +62,7 @@ var server = http.createServer(function(request, response){
   serveStatic(response, cache, absPath);
 });
 
-server.listen(9001, function() {
-  console.log("Server listening on port 9001.");
+server.listen(port, function() {
 });
 
 
