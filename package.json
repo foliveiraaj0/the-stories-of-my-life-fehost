@@ -1,0 +1,15 @@
+{
+  "name": "chatrooms",
+  "version": "0.0.1",
+  "description": "Minimalist multiroom chat server",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "dependencies": {
+    "mime": "~1.2.7",
+    "express": "~4.14.0",
+    "body-parser": "~1.15.2",
+    "multer": "~1.1.0"
+  }
+}
